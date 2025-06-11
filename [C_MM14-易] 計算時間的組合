@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int into,sum,sec,minute,hours,day;
+  cin >>into;
+  day=into/86400;
+  sum=into-day*86400;
+  hours=sum/3600;
+  sum=sum-hours*3600;
+  minute=sum/60;
+  sum=sum-minute*60;
+  cout <<day<<" days"<<endl;
+  cout <<hours<<" hours"<<endl;
+  cout <<minute<<" minutes"<<endl;
+  cout <<sum<<" seconds"<<endl;
+  return 0;
+}
