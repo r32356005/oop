@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main(){
+    int hours,per;
+	double money;
+	while(cin>>hours>>per){
+	if(hours<=60){
+		money=hours*per;
+		cout<<fixed<<setprecision(1)<<money<<endl;
+	}else if((hours>60)&&(hours<=120)){
+		money=(60*per)+((hours-60)*per*1.33);
+		cout<<fixed<<setprecision(1)<<money<<endl;
+	}else{
+		money=(60*per)+(60*per*1.33)+((hours-120)*per*1.66);
+		cout<<fixed<<setprecision(1)<<money<<endl;
+	}
+	}
+	return 0;
+}
