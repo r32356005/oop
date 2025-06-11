@@ -1,0 +1,14 @@
+#include <cmath>
+#include <iostream> 
+using namespace std;
+int main(){
+  int i,b;
+  cin >>  i;
+  if (i>31){
+    cout << "Value of more than 31" <<endl;
+  }else{
+    b=pow(2,i);
+   cout << b<< endl;
+  }
+return 0;
+}
